@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+    <div class="profile-header">
+
+        <img src="{{ url_for('static', filename='images/pic.jpg') }}" alt="A pic of a man in a paper bag over his head" />
+
+        <h1>Mary Jane</h1>
+        <span>@mjane</span>
+        <span>Kingston, Jamaica</span>
+        <span>Joined {{ date_joined }}</span>
+
+    </div>
+
+    <div class="more-profile-info">
+
+        <p>
+            I am a smart and talented young man who loves website design and development. Contact me if you'd like to work
+            together on a new project.
+        </p>
+
+        <div class="stats">
+
+            <div>
+
+                <span>7</span>
+                <span>Posts</span>
+
+            </div>
+            <div>
+
+                <span>100</span>
+                <span>Following</span>
+
+            </div>
+            <div>
+
+                <span>250</span>
+                <span>Followers</span>
+
+            </div>
+
+        </div>
+
+        <button>Follow</button>
+
+    </div>
+
+{% endblock %}
